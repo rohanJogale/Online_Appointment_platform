@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Portal - Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Appointment Management Portal</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="book.html">Book Appointment</a> |
+            <a href="appointments.html">View Appointments</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2>Book an Appointment</h2>
+
+        <form id="booking-form">
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" id="patient-name" required>
+            
+            <label for="doctor-select">Select Doctor:</label>
+            <select id="doctor-select" required>
+                <option value="">-- Choose a Doctor --</option>
+                
+            </select>
+            
+            <label for="appointment-date">Date:</label>
+            <input type="date" id="appointment-date" required>
+            
+            <label for="appointment-time">Time:</label>
+            <input type="time" id="appointment-time" required>
+            
+            <button type="submit">Book Appointment</button>
+        </form>
+        <div id="error-message" style="color: red; display: none;"></div>
+        <div id="success-message" style="color: green; display: none;">Appointment booked successfully!</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
